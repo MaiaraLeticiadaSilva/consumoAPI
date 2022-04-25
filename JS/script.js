@@ -1,5 +1,5 @@
 document.querySelector("#input").onclick=function(){
-    fetch("https://h-apigateway.conectagov.estaleiro.serpro.gov.br/api-cep/v1/consulta/cep/").then(
+    fetch("https://h-apigateway.conectagov.estaleiro.serpro.gov.br/api-cep/v1/consulta/cep/{cep}").then(
         function(res){
             return res.json();
         }
