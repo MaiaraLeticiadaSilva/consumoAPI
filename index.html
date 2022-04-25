@@ -4,27 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./css/style.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
+<header><h1>CONSULTA CEP</h1></header>
 <body>
-    <h1>CONSULTA CEP</h1>
-    <form>
-        <div>
-            <label>Informe o CEP:</label>
-        </div>
-        <div>
-            <input type="text" name="cep" id="cep"/>
-        </div>
-        <div>
-            <input type="submit" name="Consultar" value="Consultar" id="input"/>
-        </div>
-    </form>
+    <div id="form">
+        <form>
+            <div>
+                <label>Informe o CEP:</label>
+            </div>
+            <div>
+                <input type="text" name="cep" id="cep"/>
+            </div>
+            <div>
+                <input type="submit" name="Consultar" value="Consultar" id="input"/>
+            </div>
+        </form>
+    </div>
+    
 
     <div id="table">
         <table>
             <thead>
                 <tr>
-                    <th>CEP</th><th>UF</th><th>CIDADE</th><th>BAIRRO</th><th>ENDEREÇO</th><th>COMPLEMENTO</th><th>CÓDIGO IBGE</th>
+                    <th class="titulos">CEP</th>
+                    <th class="titulos">UF</th>
+                    <th class="titulos">CIDADE</th>
+                    <th class="titulos">BAIRRO</th>
+                    <th class="titulos">ENDEREÇO</th>
+                    <th class="titulos">COMPLEMENTO</th>
+                    <th class="titulos">CÓDIGO IBGE</th>
                 </tr>
             </thead>
             <tbody id="cep-t">

@@ -1,0 +1,30 @@
+header{
+    background-color: #BDB76B;
+}
+h1{
+    margin-left: 32vw;
+    color: #ffffff;
+}
+#form{
+    margin: auto;
+    width: 13vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+table{
+    margin: auto;
+    margin-top: 5vh;
+    border: #000000 solid 2px;
+}
+.titulos{
+    border-left: #000000 solid 2px;
+}
+th{
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+thead{
+    background-color: 		#BDB76B;
+}

@@ -1,10 +1,10 @@
 document.querySelector("#input").onclick=function(){
-    fetch("https://h-apigateway.conectagov.estaleiro.serpro.gov.br/oauth2/jwt-token").then(
+    fetch("https://h-apigateway.conectagov.estaleiro.serpro.gov.br/api-cep/v1/consulta/cep/").then(
         function(res){
-            console.log(res.json())
             return res.json();
         }
     ).then(function(res){
+        console.log(res)
         let tbody = document.querySelector("#cep-t")
             let tr = document.createElement("tr")
             let tdcep = document.createElement("td")
