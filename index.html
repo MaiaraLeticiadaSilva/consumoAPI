@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CONSULTA CEP</h1>
+    <form>
+        <div>
+            <label>Informe o CEP:</label>
+        </div>
+        <div>
+            <input type="text" name="cep" id="cep"/>
+        </div>
+        <div>
+            <input type="submit" name="Consultar" value="Consultar" id="input"/>
+        </div>
+    </form>
+
+    <div id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>CEP</th><th>UF</th><th>CIDADE</th><th>BAIRRO</th><th>ENDEREÇO</th><th>COMPLEMENTO</th><th>CÓDIGO IBGE</th>
+                </tr>
+            </thead>
+            <tbody id="cep-t">
+            </tbody>
+        </table>
+    </div> 
+</body>
+<script src="./JS/script.js"></script>
+</html>
