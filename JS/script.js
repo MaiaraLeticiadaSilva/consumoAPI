@@ -1,5 +1,6 @@
-document.querySelector("#input").onclick=function(){
-    fetch("https://h-apigateway.conectagov.estaleiro.serpro.gov.br/api-cep/v1/consulta/cep/{cep}").then(
+document.querySelector("#input").onclick=function(e){
+    let cep=document.getElementById("cep").value;
+    fetch(`https://viacep.com.br/ws/${cep}/json/`).then(
         function(res){
             return res.json();
         }
@@ -16,7 +17,7 @@ document.querySelector("#input").onclick=function(){
             tduf.append(txuf)
             tr.append(tduf)
             let tdCidade = document.createElement("td")
-            let txCidade = document.createTextNode(res.cidade)
+            let txCidade = document.createTextNode(res.localidade)
             tdCidade.append(txCidade)
             tr.append(tdCidade)
             let tdBairro = document.createElement("td")
@@ -24,7 +25,7 @@ document.querySelector("#input").onclick=function(){
             tdBairro.append(txBairro)
             tr.append(tdBairro)
             let tdEndereço = document.createElement("td")
-            let txEndereço = document.createTextNode(res.endereco)
+            let txEndereço = document.createTextNode(res.logradouro)
             tdEndereço.append(txEndereço)
             tr.append(tdEndereço)
             let tdComp = document.createElement("td")
@@ -32,9 +33,10 @@ document.querySelector("#input").onclick=function(){
             tdComp.append(txComp)
             tr.append(tdComp)
             let tdCod = document.createElement("td")
-            let txCod = document.createTextNode(res.codigoIBGE)
+            let txCod = document.createTextNode(res.ibge)
             tdCod.append(txCod)
             tr.append(tdCod)
             tbody.append(tr)
     })
+    e.preventDefault();
 }
